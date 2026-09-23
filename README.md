@@ -1,424 +1,162 @@
-Name-Sanika Ramdas Kondhalkar
-Class-Second year AIDS
-Division-A
-Course-Object oriented programming using C++ 
-Unit-2
+Student Details
 
-OBJECT-ORIENTED PROGRAMMING WITH C++
+Field | Details
 
-UNIT 1: FUNDAMENTALS OF C++ AND OBJECT-ORIENTED PROGRAMMING
+Student Name | Sanika Ramdas Kondhalkr 
 
-PRACTICAL CODE BOOK - README
+Roll No. | AD2169
 
-Course Code: ADPC303
-Program: S.Y. B.Tech. Artificial Intelligence and Data Science
-Language Standard: C++17 or later
+PRN | 125URA1102
 
-============================================================
-CONTENTS
+Class/Division | SY B.Tech AI & DS – Div A
 
-This code book contains 8 C++ programs covering basic C++
-programming and introductory Object-Oriented Programming
-concepts.
+Course Name | Object-Oriented Programming with c++
 
-1. Basic Data Types
-2. if-else Statement
-3. Loop and Array
-4. Functions
-5. Class and Object
-6. Constructor and Destructor
-7. Static Member
-8. Inline and Friend Function
+Unit | Unit 1- Fundamentals of Object Oriented Programming
 
-============================================================
-PROGRAM 1: BASIC DATA TYPES
+===================================================================================== About the Repository
+This repository contains 8 C++ programs demonstrating fundamental concepts of C++ programming and Object-Oriented Programming (OOP).
 
-Concept:
-Basic data types are used to store different kinds of values
-such as integers, characters, and decimal numbers.
+The programs cover variables, decision-making statements, arrays, functions, classes and objects, constructors and destructors, static data members, inline functions, and friend functions.
 
-Main idea:
-The program stores and displays a student's roll number,
-grade, and fee amount.
+==================================================================================== Program 1: Basic Variables and Data Types
+Description: This program demonstrates the use of basic C++ data types such as int, char, and float. It also demonstrates displaying values using cout.
 
-Data types used:
+Concepts Used:
 
-- int: Stores whole numbers
-- char: Stores a single character
-- float: Stores decimal numbers
+Integer (int)
+Character (char)
+Floating-point (float)
+cout
+endl
+Expected Output: Roll No: 101 Grade: A Fee: 12500.5
 
-Main concepts:
+====================================================================================== Program 2: If-Else Statement
+Description: This program demonstrates decision-making using the if-else statement. It checks whether a student's marks are greater than or equal to 40.
 
-- Variable declaration
-- Data types
-- Output using cout
-
-============================================================
-PROGRAM 2: IF-ELSE
-
-Concept:
-The if-else statement is used for decision making in a
-program.
-
-Main idea:
-The program checks whether a student's marks are greater than
-or equal to 40.
-
-Condition:
-marks >= 40
-
-If the condition is true:
-Student is declared "Pass".
-
-If the condition is false:
-Student is declared "Fail".
-
-Main concepts:
-
-- Selection
-- if statement
-- else statement
-- Conditional checking
-
-============================================================
-PROGRAM 3: LOOP AND ARRAY
-
-Concept:
-An array stores multiple values of the same data type, while
-a loop can be used to process the array elements.
-
-Main idea:
-The program stores the marks of five students in an array and
-prints all the marks using a for loop.
-
-Array:
-marks[5]
-
-Main concepts:
-
-- Array
-- Array indexing
-- for loop
-- Index variable
-
-Important:
-Array indexing starts from 0.
-
-============================================================
-PROGRAM 4: FUNCTIONS
-
-Concept:
-A function is a reusable block of code designed to perform a
-specific task.
-
-Main idea:
-The program creates an addition function that accepts two
-numbers and returns their sum.
-
-Function:
-add(int x, int y)
-
-Main concepts:
-
-- Function declaration
-- Function prototype
-- Function call
-- Parameters
-- Return value
-
-Example:
-add(a, b)
-
-============================================================
-PROGRAM 5: CLASS AND OBJECT
-
-Concept:
-A class is a blueprint for creating objects. An object is an
-instance of a class.
-
-Class:
-Student
-
-Data members:
-
-- name
-- age
-
-Member function:
-
-- show()
-
-Main idea:
-The program creates a Student object, stores student details,
-and displays them using a member function.
-
-Main concepts:
-
-- Class
-- Object
-- Data members
-- Member function
-- Dot operator (.)
-
-Example:
-Student s1;
-
-============================================================
-PROGRAM 6: CONSTRUCTOR AND DESTRUCTOR
-
-Concept:
-A constructor is automatically called when an object is
-created, while a destructor is automatically called when an
-object is destroyed.
-
-Class:
-Demo
-
-Constructor:
-Demo()
-
-Destructor:
-~Demo()
-
-Main idea:
-The program demonstrates the automatic execution of a
-constructor and destructor.
-
-Execution order:
-
-Object creation
-|
-v
-Constructor called
-|
-v
-Program execution
-|
-v
-Object destroyed
-|
-v
-Destructor called
-
-Main concepts:
-
-- Constructor
-- Destructor
-- Object creation
-- Object cleanup
-
-============================================================
-PROGRAM 7: STATIC MEMBER
-
-Concept:
-A static data member belongs to the class rather than to an
-individual object.
-
-Class:
-Student
-
-Static member:
-
-- count
-
-Main idea:
-The constructor increases the shared count whenever a new
-Student object is created.
-
-Example:
-
-Student s1, s2, s3;
-
-The value of count becomes:
-
-3
-
-Main concepts:
-
-- Static data member
-- Shared class data
-- Constructor
-- Scope resolution operator (::)
-
-Static member definition:
-
-Student::count = 0;
-
-============================================================
-PROGRAM 8: INLINE AND FRIEND FUNCTION
-
-Concept:
-An inline function can be used for small functions, while a
-friend function can access private members of a class when
-friendship is explicitly declared.
-
-Class:
-Test
-
-Private data member:
-
-- value
-
-Member function:
-
-- getValue()
-
-Friend function:
-
-- show(Test t)
-
-Main idea:
-The program demonstrates accessing private data through an
-inline getter and a friend function.
-
-Main concepts:
-
-- Private data
-- Constructor
-- Inline function
-- Friend function
-- Access to private members
-
-============================================================
-IMPORTANT C++ KEYWORDS USED
-
-#include <iostream>
-Includes the input/output stream library.
-
-using namespace std;
-Allows standard-library names such as cout to be used
-without writing std:: before them.
-
-int
-Used to store whole numbers.
-
-char
-Used to store a single character.
-
-float
-Used to store decimal numbers.
+Concepts Used:
 
 if
-Used to check a condition.
-
 else
-Executes when the if condition is false.
+Relational operator (>=)
+Conditional execution
+cout
+Expected Output: Pass
 
-for
-Used to repeat a block of code.
+======================================================================================== Program 3: Array and For Loop
+Description: This program stores five marks in an integer array and uses a for loop to display each element.
 
-class
-Used to define a class.
+Concepts Used:
 
-public
-Specifies members that can be accessed according to the
-class access rules.
+Array
+Array indexing
+for loop
+Increment operator (++)
+cout
+Expected Output: 78 82 91 67 88
 
-private
-Specifies members that can normally be accessed only
-inside the class and by permitted friends.
+========================================================================================== Program 4: Function
+Description:
 
-static
-Defines a class-level member shared by objects.
+This program demonstrates the use of a function to calculate the sum of two numbers. It includes a function declaration, function call, parameters, and return value.
 
-inline
-Suggests that a small function can be expanded at its
-call location.
+Concepts Used:
 
-friend
-Gives a specified function or class permission to access
-private and protected members.
-
+Function declaration
+Function definition
+Parameters
+Arguments
+Function calling
 return
-Returns a value from a function or ends main().
+Expected Output: Sum = 30
 
-::
-Scope resolution operator used to specify a class or scope.
+========================================================================================== Program 5: Class and Object
+Description:
 
-============================================================
-MAIN OOP CONCEPTS COVERED
+This program demonstrates the basic concept of classes and objects in C++. A Student class contains student information such as name and age and a member function to display the information.
 
-1. Class
-   A class is a blueprint for creating objects.
+Concepts Used:
 
-2. Object
-   An object is an instance of a class.
+Class
+Object
+Data members
+Member function
+public
+Dot (.) operator
+Expected Output Amit 20
 
-3. Constructor
-   A special function automatically called when an object
-   is created.
+======================================================================================== Program 6: Constructor and Destructor
+Description:
 
-4. Destructor
-   A special function automatically called when an object
-   is destroyed.
+This program demonstrates the use of a constructor and destructor. The constructor is automatically called when an object is created, while the destructor is automatically called when the object is destroyed.
 
-5. Encapsulation
-   Data and functions can be combined inside a class.
+Concepts Used:
 
-6. Static Member
-   A member shared by all objects of the class.
+Class
+Constructor
+Destructor
+Object creation
+Object destruction
+~ destructor symbol
+Expected Output: Constructor called Destructor called
 
-7. Friend Function
-   A function that is allowed to access private members of
-   a class.
+========================================================================================= Program 7: Static Data Member
+Description:
 
-8. Inline Function
-   A function intended for small operations where inline
-   expansion may be useful.
+This program demonstrates a static data member. The static variable count is shared by all objects of the Student class. Every time a new object is created, the constructor increases the value of count.
 
-============================================================
-HOW TO COMPILE
+Concepts Used:
 
-Use a C++17-compatible compiler.
+static data member
+Constructor
+Multiple objects
+Scope resolution operator (::)
+Object counting
+Expected Output: 3
 
-Example with g++:
+Working: Three objects are created: s1 → count = 1 s2 → count = 2 s3 → count = 3
 
-g++ -std=c++17 filename.cpp -o program
+Therefore, the final value of Student::count is 3.
 
-Run on Windows:
+========================================================================================= Program 8: Inline and Friend Function
+Description:
 
-program.exe
+This program demonstrates an inline member function and a friend function. The getValue() function returns the private data member value, while the friend function show() is allowed to directly access the private member.
 
-Run on Linux/macOS:
+Concepts Used:
 
-./program
+Private data member
+Constructor
+Inline function
+Friend function
+Object
+Member access operator (.)
+Scope of private members
+Expected Output: 50 50
 
-============================================================
-HOW TO RUN THE PROGRAMS
+Working The object is created with: Test obj(50); The constructor stores: value = 50 Then: obj.getValue() returns 50. The friend function: show(obj) can directly access the private member value and prints 50.
 
-1. Open the required .cpp file in VS Code.
+========================================================================================== Overall Concepts Covered
+The 8 programs cover the following important C++ concepts:
 
-2. Open the terminal.
-
-3. Compile the program using:
-   
-   g++ -std=c++17 filename.cpp -o program
-
-4. Run the program.
-
-Windows:
-
-program.exe
-
-Linux/macOS:
-
-./program
-
-============================================================
-LEARNING OUTCOME
-
-After completing these programs, students will understand:
-
-- Basic C++ data types
-- Conditional statements
-- Arrays and loops
-- Functions
-- Classes and objects
-- Constructors and destructors
-- Static members
-- Inline functions
-- Friend functions
-- Basic Object-Oriented Programming concepts
-
-============================================================
-END OF README
+Basic data types
+Variables
+Input/Output
+Conditional statements
+Arrays
+Loops
+Functions
+Classes
+Objects
+Data members
+Member functions
+Constructors
+Destructors
+Static data members
+Inline functions
+Friend functions
+Access specifiers
+Scope resolution operator
+Member access operator
+========================================================================================== Conclusion
+These programs provide a basic understanding of C++ programming and Object-Oriented Programming concepts. They demonstrate how variables, control structures, functions, classes, objects, constructors, destructors, static members, inline functions, and friend functions are used in C++ programs.
